@@ -22,7 +22,7 @@
         <button class="btn btn-danger w-20 mt-2" onclick="traer()"> OBTENER</button>
     </div>
 
-    <div class="container  text-center mt-5" id="contenido" style="width: max-content;">
+    <div class="container  text-center mt-3" id="contenido" style="width: max-content;">
         <img src="" alt="" width="100px" class="img-fluid rounded-circle">
         <!-- <p>Nombre:</p> -->
     </div>
@@ -35,7 +35,7 @@
                 .then(res => res.json())
                 .then(data => { //promesas
                     console.log(data.results['0']);
-                    contenido.innerHTML = `<div class="mt-5 separacion" id="contenido">
+                    contenido.innerHTML = `<div class="mt-2 separacion" id="contenido">
                                                 <div class="card sombra" style="width: ">
                                                 <div class="card-body">
                                                 <h5 class="card-title">Informacion Personal</h5>
