@@ -9,3 +9,7 @@ body {
 h1 {
     font-family: 'Questrial', sans-serif;
 }
+
+.separacion {
+    min-height: 100vh;
+}
