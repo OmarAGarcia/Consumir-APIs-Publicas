@@ -15,22 +15,49 @@
 </head>
 
 <body>
-
-    <img src="" alt="">
-    <div class="container text-center ">
-        <h1>Consumir APIs Publicas</h1>
-        <button class="btn btn-danger w-20 mt-2" onclick="traer()"> OBTENER</button>
+    <!-- ===================================================
+         SECCION: CONSUMIR API PUBLICA CON FETCH
+        ==================================================== -->
+    <!-- CONTENEDOR DEL BOTON OBTENER -->
+    <div class="container">
+        <div class="container text-center ">
+            <h1>Consumir APIs Publicas</h1>
+            <button class="btn btn-danger w-20 mt-2" onclick="traer()"> OBTENER</button>
+        </div>
+        <!-- CONTENEDOR DE LA IMAGEN -->
+        <div class="container  text-center mt-3" id="contenido" style="width: max-content;">
+            <img src="" alt="" width="100px" class="img-fluid rounded-circle">
+            <!-- <p>Nombre:</p> -->
+        </div>
     </div>
 
-    <div class="container  text-center mt-3" id="contenido" style="width: max-content;">
-        <img src="" alt="" width="100px" class="img-fluid rounded-circle">
-        <!-- <p>Nombre:</p> -->
+    <!-- =======================================================
+         SECCION: TABLA DINAMICA CON JSON
+        ======================================================== -->
+    <hr>
+    <div class="container text-center">
+        <h1>Tabla Dinamica con JSON</h1>
+        <button class="btn btn-danger w-20 mt-2" onclick="tabla()">OBTENER</button>
+    </div>
+    <div class=" container mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla2">
+            </tbody>
+        </table>
     </div>
 
-    <script>
-    </script>
     <!-- Optional JavaScript -->
+    <script src="./views/dist/js/tabla.js"></script>
     <script src="./views/dist/js/traer.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
